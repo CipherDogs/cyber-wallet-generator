@@ -5,7 +5,7 @@ mod generator;
 use generator::*;
 
 fn main() {
-    let matches = App::new("walletgen")
+    let matches = App::new("cyber-wallet-generator")
         .version("0.1.0")
         .author("DEADBLACKCLOVER <deadblackclover@protonmail.com>")
         .about("CLI address generator for cyber blockchain")
