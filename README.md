@@ -3,6 +3,7 @@ Address generator in Rust for cyber blockchain
 
 ## Install
 If you have Rust: `cargo install cyber-wallet-generator`
+If you have Debian/Ubuntu: [Releases](https://github.com/CipherDogs/cyber-wallet-generator/releases)
 
 ## Usage
 
