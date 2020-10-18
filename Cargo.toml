@@ -1,6 +1,6 @@
 [package]
 name = "cyber-wallet-generator"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["DEADBLACKCLOVER <deadblackclover@protonmail.com>"]
 description = "CLI address generator for cyber blockchain"
 edition = "2018"
@@ -15,3 +15,16 @@ keywords = ["address", "blockchain", "cyber"]
 [dependencies]
 clap = "2.33.0"
 cyber = "0.1.3"
+
+[package.metadata.deb]
+maintainer = "DEADBLACKCLOVER <deadblackclover@protonmail.com>"
+copyright = "2020, DEADBLACKCLOVER <deadblackclover@protonmail.com>"
+license-file = ["LICENSE", "0"]
+extended-description = "CLI address generator for cyber blockchain"
+depends = "$auto"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/cyber-wallet-generator", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/cyber-wallet-generator/README", "644"],
+]
