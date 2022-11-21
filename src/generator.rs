@@ -6,7 +6,7 @@ pub struct Address {
     pub address: String,
 }
 
-pub fn generate() -> Address {
+pub fn generate(prefix: &str) -> Address {
     let phrase = generate_phrase();
 
     let sk = PrivateKeyWallet::from_seed((*phrase).to_string(), None);
@@ -14,6 +14,6 @@ pub fn generate() -> Address {
 
     Address {
         mnemonic: phrase,
-        address: pk.to_address(),
+        address: pk.to_address(prefix),
     }
 }

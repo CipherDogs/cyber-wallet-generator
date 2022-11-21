@@ -9,7 +9,7 @@ If you have Debian/Ubuntu: [Releases](https://github.com/CipherDogs/cyber-wallet
 ## Usage
 
 ```bash
-cyber-wallet-generator 0.1.0
+cyber-wallet-generator 1.0.0
 DEADBLACKCLOVER <deadblackclover@protonmail.com>
 CLI address generator for cyber blockchain
 
@@ -21,5 +21,6 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -c, --count <INT>    Sets a address generate count
+        --chain <NAME>    Sets the generation prefix
+    -c, --count <INT>     Sets a address generate count
 ```
